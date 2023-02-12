@@ -121,3 +121,11 @@ body {
     width: 250px;
   }
 }
+@media(max-width:400px){
+  .block{
+    width: 300px;
+  }
+    .disc{
+      width: 250px;
+    }
+  }
