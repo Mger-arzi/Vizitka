@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@400;500;700 & display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  background: #b08a90;
+  background: linear-gradient(45deg, #b08a90, #b9d8e4);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b08a90", endColorstr="#b9d8e4", GradientType=1 );
+  min-height: 100%;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.block {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 34px;
+  padding: 50px 0;
+}
+.block .img-holder {
+  background: #b3aab9;
+  background: -webkit-gradient(linear, left top, right top, from(#b3aab9), to(#bad2bf));
+  background: linear-gradient(90deg, #b3aab9, #bad2bf);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b3aab9", endColorstr="#bad2bf", GradientType=1 );
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-image: url(./css/Mger-1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.block h3 {
+  font-weight: 400;
+  font-size: 23px;
+  color: #858b8e;
+}
+.block p {
+  color: #6c7174;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.disc{
+  display: block;
+  width: 350px;
+  margin:  auto;
+  line-height: 1.5;
+  padding: 20px 0 0 0;
+  font-size: 16px;
+}
+.block .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+.block .social div {
+  border: 1px solid #eaeaec;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  /* color: #eaeaec; */
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.block .social div.twitter:hover {
+  background: hsl(141deg, 86%, 51%);
+  color: #fff;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  border-color: hsl(141deg, 86%, 51%);
+}
+.block .social div.fb:hover {
+  background: #3b5999;
+  color: #fff;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  border-color: #3b5999;
+}
+.block .social div.yt:hover {
+  background: black;
+  color: #fff;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  border-color: black;
+}
+.bottom-text {
+  text-align: center;
+  color: #c8c2c8;
+  margin-top: 100px;
+}
+@media(max-width:340px){
+  .block{
+    width: 300px;
+  }
+  .disc{
+    width: 250px;
+  }
+}
