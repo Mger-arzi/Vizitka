@@ -16,32 +16,36 @@ body {
 
 .wrapper {
   width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
   background: #b08a90;
   background: linear-gradient(45deg, #b08a90, #b9d8e4);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b08a90", endColorstr="#b9d8e4", GradientType=1 );
-  min-height: 100%;
-  padding-top: 150px;
-  padding-bottom: 50px;
 }
 
 .block {
   width: 400px;
-  margin: 0 auto;
+  max-width: 100%;
   text-align: center;
   background: #fff;
   border-radius: 34px;
-  padding: 50px 0;
+  padding: 28px 20px 24px;
 }
 .block .img-holder {
   background: #b3aab9;
   background: -webkit-gradient(linear, left top, right top, from(#b3aab9), to(#bad2bf));
   background: linear-gradient(90deg, #b3aab9, #bad2bf);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b3aab9", endColorstr="#bad2bf", GradientType=1 );
-  width: 250px;
-  height: 250px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   background-image: url(./css/Mger-1.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -54,16 +58,16 @@ body {
 }
 .block p {
   color: #6c7174;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 .disc{
   display: block;
   width: 350px;
   margin:  auto;
-  line-height: 1.5;
-  padding: 20px 0 0 0;
-  font-size: 16px;
+  line-height: 1.4;
+  padding: 12px 0 0 0;
+  font-size: 14px;
 }
 .block .social {
   display: -webkit-box;
@@ -74,7 +78,7 @@ body {
           justify-content: space-between;
   width: 60%;
   margin-left: 20%;
-  margin-top: 20%;
+  margin-top: 20px;
 }
 .block .social div {
   border: 1px solid #eaeaec;
@@ -108,10 +112,18 @@ body {
           transform: translateY(-15px);
   border-color: black;
 }
+.block .social div.resume:hover {
+  background: #d6001c;
+  color: #fff;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  border-color: #d6001c;
+}
 .bottom-text {
   text-align: center;
   color: #c8c2c8;
-  margin-top: 100px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 @media(max-width:340px){
   .block{

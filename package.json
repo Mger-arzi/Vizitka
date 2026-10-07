@@ -1,0 +1,32 @@
+{
+  "name": "my-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run check && concurrently -n \"dev,build\" -c \"cyan,yellow\" \"vite\" \"npm run build:watch\"",
+    "dev:https": "npm run check && concurrently -n \"dev,build\" -c \"cyan,yellow\" \"vite --https\" \"npm run build:watch\"",
+    "dev:only": "vite",
+    "dev:build": "tsc -b && vite build --watch",
+    "build": "npm run check && vite build"
+  },
+  "dependencies": {
+    "@easylogic/react-summernote": "^0.1.4",
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-regular-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.0",
+    "@tippyjs/react": "^4.2.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "ky": "^1.14.3",
+    "react": "^19.1.1",
+    "react-chartjs-2": "^5.3.1",
+    "react-collapse": "^5.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.3"
+  }
+}
